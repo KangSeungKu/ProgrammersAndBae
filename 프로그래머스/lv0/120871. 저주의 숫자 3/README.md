@@ -4,7 +4,8 @@
 
 ### 성능 요약
 
-메모리: 33.6 MB, 시간: 0.09 ms
+<p>[solution1] 메모리: 33.5 MB, 시간: 0.18 ms</p>
+<p>[solution2] 메모리: 33.6 MB, 시간: 0.09 ms</p>
 
 ### 구분
 
@@ -12,7 +13,7 @@
 
 ### 채점결과
 
-Empty
+<p>0부터 n까지의 배열을 만들때, <code>Array.from({length: 100}, (_, i) => i)</code> 보다는 <code>[...new Array(100).keys()]</code>이 효율이 더 좋은 것을 확인함.</p>
 
 ### 문제 설명
 
