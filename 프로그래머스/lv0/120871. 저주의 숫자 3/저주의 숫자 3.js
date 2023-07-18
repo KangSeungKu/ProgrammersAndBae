@@ -1,1 +1,1 @@
-const solution = n => Array.from({length: 186}, (_, i) => i).filter(n => (n % 3) && !String(n).includes("3")).at(n - 1);
+const solution = n => [...new Array(186).keys()].filter(n => (n % 3) && !String(n).includes("3")).at(n - 1);
