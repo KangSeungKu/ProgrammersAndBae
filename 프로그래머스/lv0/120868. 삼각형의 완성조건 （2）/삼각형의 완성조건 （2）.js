@@ -1,0 +1,1 @@
+const solution = sides => 2 * Math.min(...sides) - 1;
