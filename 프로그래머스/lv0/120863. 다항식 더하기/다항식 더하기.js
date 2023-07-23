@@ -1,19 +1,19 @@
 const solution = polynomial => {
-    const polyn = polynomial.replaceAll(" + ", " ").split(" ");
-    let res = "";
+    const polyn = polynomial.split(" + ");
+    let res = [];
     let x = 0;
     let con = 0;
 
     polyn.forEach(n => {
-        if(n.includes("x")) {
-            x += n.length === 1 ? 1 : Number(n.replace("x", ""));
+        if(isNaN(n)) {
+            x += Number(n.replace('x', '')) || 1;
         } else {
             con += Number(n);
         }
     });
 
-    res = x === 1 ? "x" : x > 1 ? x + "x" : "";
-    res += con === 0 ? "" : x > 0 ? " + " + con : con;
+    if(x) res.push(`${x === 1 ? '' : x}x`);
+    if(con) res.push(con);
 
-    return res;
+    return res.join(" + ");
 }
