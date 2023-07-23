@@ -1,1 +1,1 @@
-const solution = (my_string) => [...my_string].map(ch => isNaN(ch) ? " " : ch).join('').split(" ").filter(n => n).reduce((acc, cur) => acc + Number(cur), 0);
+const solution = my_string => my_string.split(/\D+/).reduce((acc, cur) => acc + Number(cur), 0);
