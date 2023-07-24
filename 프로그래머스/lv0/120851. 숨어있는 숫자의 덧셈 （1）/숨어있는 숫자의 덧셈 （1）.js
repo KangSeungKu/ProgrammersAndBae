@@ -1,0 +1,1 @@
+const solution = (my_string) => [...my_string].reduce((acc, cur) => acc += isNaN(cur) ? 0 : Number(cur), 0);
