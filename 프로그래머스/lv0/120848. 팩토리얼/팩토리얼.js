@@ -1,9 +1,11 @@
 const solution = n => {
-    let answer = 0;
+    let answer = 1;
+    let ftrl = 1;
 
-    while(getPactorial(answer) <= n) answer++;
+    while(ftrl <= n) {
+        answer++;
+        ftrl *= answer;
+    }
 
     return --answer;
 }
-
-const getPactorial = n => n > 1 ? n * getPactorial(--n) : 1;
