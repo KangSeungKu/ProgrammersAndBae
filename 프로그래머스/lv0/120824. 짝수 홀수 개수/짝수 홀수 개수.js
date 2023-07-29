@@ -1,0 +1,1 @@
+const solution = num_list => num_list.reduce((acc, cur) => (cur % 2 ? acc[1] += 1 : acc[0] += 1, acc), [0,0]);
