@@ -4,7 +4,8 @@
 ## 진행 중 언어
 <p style="font-size: 1.2em; font-weight: bold; color: #FE8B05">javascript</p>
 <p style="color: #0AABBA">코딩 기초 트레이닝 [완료]</p>
-<p style="color: #FE0557">Level 0 [진행중]</p>
+<p style="color: #FE0557">코딩테스트 입문 [완료]</p>
+<p style="color: #FE0557">Level 1 [진행중]</p>
 <br>
 <p style="font-size: 1.2em; font-weight: bold; color: #FE8B05">JAVA</p>
 <p style="color: #FE0557">코딩 기초 트레이닝 [진행중]</p>
