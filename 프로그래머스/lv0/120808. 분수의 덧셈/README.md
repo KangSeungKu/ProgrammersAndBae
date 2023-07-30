@@ -4,7 +4,8 @@
 
 ### 성능 요약
 
-메모리: 33.5 MB, 시간: 0.06 ms
+<p>[log n] 메모리: 33.4 MB, 시간: 0.05 ms</p>
+<p>[n log n] 메모리: 33.5 MB, 시간: 0.06 ms</p>
 
 ### 구분
 
@@ -12,7 +13,7 @@
 
 ### 채점결과
 
-Empty
+<p>시간복잡도 상의 비교를 위해 분석한 코드로 <code>getGCD</code>의 경우 <code>while</code>문을 이용하여 <code>O(log n)</code>의 결과를 얻을 수 있고 <code>fnGCD</code>의 경우 재귀함수를 활용하여 <code>O(n log n)</code>의 결과를 얻어 두 함수를 비교하였을 때, <code>while</code>문을 이용한 <code>getGCD</code>의 함수의 효율이 더 좋은 것으로 나타났다.</p>
 
 ### 문제 설명
 
