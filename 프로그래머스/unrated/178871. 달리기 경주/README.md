@@ -1,4 +1,4 @@
-# [unrated] 달리기 경주 - 178871 
+# [level 1] 달리기 경주 - 178871 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/178871?language=javascript) 
 
@@ -12,7 +12,7 @@
 
 ### 채점결과
 
-Empty
+<p><code>Map</code>을 사용했을 때와 <code>Object</code>를 사용했을 때의 차이를 확인할 수 없었으며, 최초 작성했던 코드 중 배열의 문자열을 찾는 <code>indexOf</code>함수에서 시간소요가 컸던 것으로 예상됨.</p>
 
 ### 문제 설명
 
