@@ -1,9 +1,1 @@
-const solution = (name, yearning, photo) => {
-    const memoryScoreObj = {};
-    let answer = 0;
-
-    name.forEach((nm, idx) => memoryScoreObj[nm] = yearning[idx]);
-    answer = photo.map(phArr => phArr.reduce((acc, cur) => acc + (isNaN(memoryScoreObj[cur]) ? 0 : memoryScoreObj[cur]), 0));
-
-    return answer;
-}
+const solution = (name, yearning, photo) => photo.map((ph)=> ph.reduce((acc, cur)=> acc += yearning[name.indexOf(cur)] ?? 0, 0));
