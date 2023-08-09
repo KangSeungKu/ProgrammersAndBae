@@ -1,14 +1,15 @@
 const solution = (today, terms, privacies) => {
     const answer = [];
     const termMap = new Map(terms.map(term => term.split(" ")));
-    const todayDate = new Date(today);
+    const [year, month, day] = today.split(".").map(Number);
+    const dates = year * 12 * 28 + month * 28 + day;
 
     privacies.forEach((privacy, idx) => {
         const [date, termType] = privacy.split(" ");
-        const privacyDate = new Date(date);
-        const termDate = new Date(privacyDate.setMonth(privacyDate.getMonth() + Number(termMap.get(termType))));
+        const [pYear, pMonth, pDay] = date.split(".").map(Number);
+        const termDates = pYear * 12 * 28 + pMonth * 28 + pDay + Number(termMap.get(termType)) * 28;
 
-        if(todayDate >= termDate) {
+        if(dates >= termDates) {
             answer.push(idx + 1);
         }
     });
