@@ -1,11 +1,12 @@
 const solution = (t, p) => {
     const tArr = [...t];
-    const splicedT = [];
+    const compareNum = Number(p);
+    let cnt = 0;
 
     while(tArr.length >= p.length) {
-        splicedT.push(Number(tArr.slice(0, p.length).join("")));
+        cnt += Number(tArr.slice(0, p.length).join("")) <= compareNum ? 1 : 0;
         tArr.shift();
     }
 
-    return splicedT.reduce((acc, cur) => acc += cur <= Number(p) ? 1 : 0, 0);
+    return cnt;
 }
