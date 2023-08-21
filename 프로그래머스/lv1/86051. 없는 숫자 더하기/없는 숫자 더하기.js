@@ -7,18 +7,8 @@
 const solution = numbers => {
     const MAX_NUMBER = 10;
 
-    let answer = 0;
-    let idx = 0;
+    const sumOfMaxNum = Array.from([...Array.from({length: MAX_NUMBER}).keys()]).reduce((acc, cur) => acc + cur, 0);
+    const sumOfnumbers = numbers.reduce((acc, cur) => acc + cur, 0);
 
-    numbers.sort((a, b) => a - b);
-
-    for(let i = 0; i < MAX_NUMBER; i++) {
-        if(numbers.at(idx) !== i) {
-            answer += i;
-        } else {
-            idx++;
-        }
-    }
-
-    return answer;
+    return sumOfMaxNum - sumOfnumbers;
 }
