@@ -12,6 +12,7 @@
 <p style="color: #FE0557">코딩 기초 트레이닝 [진행중]</p>
 <br>
 <p style="font-size: 1.2em; font-weight: bold; color: #FE8B05">python</p>
+<p style="color: #FE0557">코딩 기초 트레이닝 [진행중]</p>
 <br>
 <br>
 <hr>
